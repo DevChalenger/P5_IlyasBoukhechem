@@ -1,0 +1,149 @@
+$Primary-color: #ab6aa0;
+$Second-color: #f3e9f1;
+body {
+  font-size: 1.5em;
+  color: $Primary-color;
+}
+.displayPrimaryColor {
+  color: $Primary-color !important;
+}
+.displayPrimaryBackgroundColor {
+  background-color: $Primary-color !important;
+}
+.displaySecondBackgroundColor {
+  background-color: $Second-color !important;
+}
+.displaySecondColor {
+  color: $Second-color;
+}
+a {
+  color: inherit;
+  &:hover {
+    filter: contrast(2);
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: $Second-color;
+  box-shadow: 0px -2px 10px 1px rgb(50, 50, 50);
+}
+article {
+  img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+}
+.LogoOrinoco {
+  max-width: 150px;
+  height: auto;
+}
+.nav-link {
+  transition: 1s;
+  color: rgb(171, 106, 160) !important;
+}
+.card-h100 {
+  margin: 20px;
+  box-shadow: 0px 0px 20px 0px rgb(50, 50, 50);
+  border-radius: 1em;
+  font-size: 0.8em;
+  background-color: rgb(243, 233, 241);
+  color: rgb(171, 106, 160);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(171, 106, 160);
+}
+.ArticleImages {
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+#ArticleImages {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.descriptionIndex {
+  height: 140px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  margin: 10px 0px;
+}
+
+.row {
+  margin: auto;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 10px 1px rgb(50, 50, 50);
+  height: 100px;
+  margin-top: 20px;
+}
+.ShowHide {
+  position: relative;
+  display: inline-block;
+  &:hover {
+    .Hide {
+      visibility: visible;
+    }
+  }
+}
+.Hide {
+  visibility: hidden;
+  background-color: rgb(171, 106, 160);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 1.5em;
+  left: -2em;
+  right: -2em;
+  z-index: 1;
+}
+select {
+  max-width: 5em;
+}
+.Formulaire {
+  h2 {
+    margin: 20px 0px;
+  }
+}
+.btn {
+  background-color: rgb(171, 106, 160);
+  height: 60px;
+  color: white;
+  padding: 0 20px;
+  border: 5px solid rgb(243, 233, 200);
+  border-radius: 2em;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+}
+input:valid {
+  border: 2px solid green;
+}
+table {
+  display: block;
+  overflow: auto;
+  white-space: nowrap;
+  max-height: 200px;
+}

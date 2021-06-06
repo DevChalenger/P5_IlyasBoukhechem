@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="Fr">
+  <head>
+    <title>Orinoco</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Orinoco magasin en ligne pour l'apareil photo qui vous fais rêver"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/LogoOrinoco.png"
+          class="LogoOrinoco"
+          width="250"
+          height="100"
+          alt="LogoOrinoco"
+        />
+      </a>
+      <nav class="navbar navbar-expand-sm navbar-dark justify-content-end">
+        <div>
+          <button
+            class="navbar-toggler displayPrimaryBackgroundColor"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-right">
+            <li class="nav-item active">
+              <a href="Panier.html" class="nav-link">
+                Panier
+                <i class="fas fa-cart-arrow-down"></i>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="ramdomArticle">
+                Article
+                <i class="fas fa-store"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container" id="main">
+      <section id="productList" class="row">
+        <h1 class="text-center">Apareil Photo Haute Gamme</h1>
+        <article class="col">
+          <div class="card-h100">
+            <div class="ArticleImages card-img-top">
+              <img id="ArticleImages" src="#" alt="#" />
+            </div>
+            <div class="Description card-body text-center">
+              <div class="card-header">
+                <h2 id="title" class="card-title">/</h2>
+                <p id="price">/</p>
+                <label for="lenses">Lentilles</label>
+                <select name="lenses" id="lenses">
+                  <template id="TemplateLenses">
+                    <option value="lensesStyle" id="lensesStyle">/</option>
+                  </template>
+                </select>
+                <label for="Quantity-Numbers">Quantité</label>
+                <select name="Quantity-Numbers" id="Quantity-Numbers">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="card-text">
+                <h3 id="description">/</h3>
+              </div>
+              <div class="star card-footer">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn" id="SendButton" name="AddBasket">
+                Ajouter au panier
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="displaySecondBackgroundColor">
+      <div class="ShowHide">
+        <h3>Contacts</h3>
+        <div class="Hide">
+          <a href="mailto:Orinoco@Site.com">Orinoco@Site.com</a>
+          <span>+33 000 000 000</span>
+        </div>
+      </div>
+    </footer>
+    <!--jQery-->
+    <script src="Js/requestApi.js"></script>
+    <script src="Js/Article.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <!--jQery-->
+    <!--Popper.js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--Popper.js-->
+  </body>
+</html>
